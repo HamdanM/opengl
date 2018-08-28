@@ -1,8 +1,4 @@
-/* Ask for an OpenGL Core Context */
-// #define GLFW_INCLUDE_GLCOREARB
 #include <GLFW/glfw3.h>
-
-// #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
 int main(int argc, char** argv)
 {
@@ -13,14 +9,6 @@ int main(int argc, char** argv)
   {
      return -1;
   }
-
-// #ifdef __APPLE__
-//   /* We need to explicitly ask for a 3.2 context on OS X */
-//   glfwWindowHint (GLFW_CONTEXT_VERSION_MAJOR, 3);
-//   glfwWindowHint (GLFW_CONTEXT_VERSION_MINOR, 2);
-//   glfwWindowHint (GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-//   glfwWindowHint (GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-// #endif
 
   /* Create a windowed mode window and its OpenGL context */
   window = glfwCreateWindow( 280, 420, "Hello World", NULL, NULL );
